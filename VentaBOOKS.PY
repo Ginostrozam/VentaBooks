@@ -12,6 +12,7 @@ while True:
 
     #Validamos la opcion
     if opcion==0:
+        fu.amar("Adios!")
         break
     elif opcion==1:
         fu.verd("///GUARDAR///")
@@ -19,5 +20,14 @@ while True:
         fu.verd("///BUSCAR///")
     elif opcion==3:
         fu.verd("///CERTIFICADOS///")
+        fu.az("1) Criticas")
+        fu.az("2) Detalles")
+        cert=int(input("Seleccione : "))
+        if cert==1:
+            fu.verd("Certificado de Criticas")
+        elif cert==2:
+            fu.verd("Certificado detalle Ventas")
+        else:
+            fu.roj("Opción no valida")
     else:
         fu.roj("Opción no valida.")
